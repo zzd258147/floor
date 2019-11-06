@@ -14,9 +14,11 @@ void main() {
 
     expect(actual, equalsDart(r'''
       class _$FooBarBuilder {
-        _$FooBarBuilder(this.name);
+        _$FooBarBuilder(this.name, [this.password]);
       
         final String name;
+      
+        final String password;
       
         final List<Migration> _migrations = [];
 
@@ -44,6 +46,7 @@ void main() {
             path,
             _migrations,
             _callback,
+            password,
           );
           return database;
         }
