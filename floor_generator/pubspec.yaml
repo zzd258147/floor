@@ -18,7 +18,10 @@ dependencies:
   build_config: ^0.4.1+1
   collection: ^1.14.11
   floor_annotation:
-    path: ../floor_annotation/
+    git:
+      url: https://github.com/zzd258147/floor.git
+      path: floor_annotation
+      ref: sqlcipher
 
 dev_dependencies:
   test: ^1.6.8
